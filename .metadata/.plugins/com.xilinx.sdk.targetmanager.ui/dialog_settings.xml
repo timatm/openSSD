@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="sys_top_wrapper.bit" key="cosmos8c8w-bitFile"/>
+	<item value="false" key="cosmos8c8w-partial_bit"/>
+	<item value="" key="cosmos8c8w-bmmFile"/>
+	<item value="cosmos8c8w" key="programfpga.hwplatform"/>
+	<item value="Auto Detect" key="cosmos8c8w-device"/>
+	<item value="Local" key="cosmos8c8w-target"/>
+</section>

@@ -1,0 +1,307 @@
+10:44:16 **** Incremental Build of configuration Debug for project openssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:44:36 **** Incremental Build of configuration Debug for project openssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:46:30 **** Incremental Build of configuration Debug for project openssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/request_schedule.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -DDEBUG -Wall -O0 -g3 -I"Z:\vm\openSSD-fw-ori\openssd\src" -I"Z:\vm\openSSD-fw-ori\openssd\src\nvme" -c -fmessage-length=0 -MT"src/request_schedule.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../openssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/request_schedule.d" -MT"src/request_schedule.o" -o "src/request_schedule.o" "../src/request_schedule.c"
+../src/request_schedule.c: In function 'CheckEccErrorInfo':
+../src/request_schedule.c:1322:30: warning: variable 'errorInfo1' set but not used [-Wunused-but-set-variable]
+     unsigned int errorInfo0, errorInfo1, reqSlotTag;
+                              ^~~~~~~~~~
+'Finished building: ../src/request_schedule.c'
+' '
+'Building target: openssd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../openssd_bsp/ps7_cortexa9_0/lib -o "openssd.elf"  ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/nmc/address_translation_nmc.o ./src/nmc/nmc_file_table.o ./src/nmc/nmc_mapping.o ./src/nmc/nmc_requests.o  ./src/monitor/monitor.o ./src/monitor/monitor_buffer.o ./src/monitor/monitor_cmds.o ./src/monitor/monitor_flash.o ./src/monitor/monitor_map.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/garbage_collection.o ./src/main.o ./src/nsc_driver.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: openssd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size openssd.elf  |tee "openssd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 187460	   7200	  25296	 219956	  35b34	openssd.elf
+'Finished building: openssd.elf.size'
+' '
+15:10:55 **** Incremental Build of configuration Debug for project openssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/nvme/nvme_admin_cmd.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -DDEBUG -Wall -O0 -g3 -I"Z:\vm\openSSD-fw-ori\openssd\src" -I"Z:\vm\openSSD-fw-ori\openssd\src\nvme" -c -fmessage-length=0 -MT"src/nvme/nvme_admin_cmd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../openssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_admin_cmd.d" -MT"src/nvme/nvme_admin_cmd.o" -o "src/nvme/nvme_admin_cmd.o" "../src/nvme/nvme_admin_cmd.c"
+'Finished building: ../src/nvme/nvme_admin_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_io_cmd.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -DDEBUG -Wall -O0 -g3 -I"Z:\vm\openSSD-fw-ori\openssd\src" -I"Z:\vm\openSSD-fw-ori\openssd\src\nvme" -c -fmessage-length=0 -MT"src/nvme/nvme_io_cmd.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../openssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_io_cmd.d" -MT"src/nvme/nvme_io_cmd.o" -o "src/nvme/nvme_io_cmd.o" "../src/nvme/nvme_io_cmd.c"
+'Finished building: ../src/nvme/nvme_io_cmd.c'
+' '
+'Building file: ../src/nvme/nvme_main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -DDEBUG -Wall -O0 -g3 -I"Z:\vm\openSSD-fw-ori\openssd\src" -I"Z:\vm\openSSD-fw-ori\openssd\src\nvme" -c -fmessage-length=0 -MT"src/nvme/nvme_main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../openssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nvme/nvme_main.d" -MT"src/nvme/nvme_main.o" -o "src/nvme/nvme_main.o" "../src/nvme/nvme_main.c"
+'Finished building: ../src/nvme/nvme_main.c'
+' '
+'Building file: ../src/nmc/address_translation_nmc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -DDEBUG -Wall -O0 -g3 -I"Z:\vm\openSSD-fw-ori\openssd\src" -I"Z:\vm\openSSD-fw-ori\openssd\src\nvme" -c -fmessage-length=0 -MT"src/nmc/address_translation_nmc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../openssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nmc/address_translation_nmc.d" -MT"src/nmc/address_translation_nmc.o" -o "src/nmc/address_translation_nmc.o" "../src/nmc/address_translation_nmc.c"
+'Finished building: ../src/nmc/address_translation_nmc.c'
+' '
+'Building file: ../src/nmc/nmc_file_table.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -DDEBUG -Wall -O0 -g3 -I"Z:\vm\openSSD-fw-ori\openssd\src" -I"Z:\vm\openSSD-fw-ori\openssd\src\nvme" -c -fmessage-length=0 -MT"src/nmc/nmc_file_table.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../openssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nmc/nmc_file_table.d" -MT"src/nmc/nmc_file_table.o" -o "src/nmc/nmc_file_table.o" "../src/nmc/nmc_file_table.c"
+In file included from ../src/nmc/nmc_file_table.c:1:
+../src/nmc/nmc_file_table.c: In function 'nmcInitFileTable':
+Z:\vm\openSSD-fw-ori\openssd\src/debug.h:107:29: warning: statement with no effect [-Wunused-value]
+ #define STATIC_ASSERT(cond) ((int)(sizeof(struct { int : (-!(cond)); })))
+                             ^
+../src/nmc/nmc_file_table.c:34:5: note: in expansion of macro 'STATIC_ASSERT'
+     STATIC_ASSERT(sizeof(NMC_FILE_TABLE) == NMC_FILE_TABLE_BYTES);
+     ^~~~~~~~~~~~~
+Z:\vm\openSSD-fw-ori\openssd\src/debug.h:107:29: warning: statement with no effect [-Wunused-value]
+ #define STATIC_ASSERT(cond) ((int)(sizeof(struct { int : (-!(cond)); })))
+                             ^
+../src/nmc/nmc_file_table.c:35:5: note: in expansion of macro 'STATIC_ASSERT'
+     STATIC_ASSERT(NMC_FILE_TABLE_ADDR <= RESERVED1_END_ADDR);
+     ^~~~~~~~~~~~~
+'Finished building: ../src/nmc/nmc_file_table.c'
+' '
+'Building file: ../src/nmc/nmc_mapping.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -DDEBUG -Wall -O0 -g3 -I"Z:\vm\openSSD-fw-ori\openssd\src" -I"Z:\vm\openSSD-fw-ori\openssd\src\nvme" -c -fmessage-length=0 -MT"src/nmc/nmc_mapping.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../openssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nmc/nmc_mapping.d" -MT"src/nmc/nmc_mapping.o" -o "src/nmc/nmc_mapping.o" "../src/nmc/nmc_mapping.c"
+In file included from ../src/nmc/nmc_mapping.c:1:
+../src/nmc/nmc_mapping.c: In function 'nmcInitMapping':
+Z:\vm\openSSD-fw-ori\openssd\src/debug.h:107:29: warning: statement with no effect [-Wunused-value]
+ #define STATIC_ASSERT(cond) ((int)(sizeof(struct { int : (-!(cond)); })))
+                             ^
+../src/nmc/nmc_mapping.c:75:5: note: in expansion of macro 'STATIC_ASSERT'
+     STATIC_ASSERT(offsetof(NMC_CH_MAPPING_TABLE, pre_info) == NMC_CH_MAPPING_PREFIX_INFO_OFFSET);
+     ^~~~~~~~~~~~~
+Z:\vm\openSSD-fw-ori\openssd\src/debug.h:107:29: warning: statement with no effect [-Wunused-value]
+ #define STATIC_ASSERT(cond) ((int)(sizeof(struct { int : (-!(cond)); })))
+                             ^
+../src/nmc/nmc_mapping.c:76:5: note: in expansion of macro 'STATIC_ASSERT'
+     STATIC_ASSERT(offsetof(NMC_CH_MAPPING_TABLE, pba) == NMC_CH_MAPPING_TABLE_OFFSET);
+     ^~~~~~~~~~~~~
+Z:\vm\openSSD-fw-ori\openssd\src/debug.h:107:29: warning: statement with no effect [-Wunused-value]
+ #define STATIC_ASSERT(cond) ((int)(sizeof(struct { int : (-!(cond)); })))
+                             ^
+../src/nmc/nmc_mapping.c:77:5: note: in expansion of macro 'STATIC_ASSERT'
+     STATIC_ASSERT(offsetof(NMC_CH_MAPPING_TABLE, post_info) == NMC_CH_MAPPING_POSTFIX_INFO_OFFSET);
+     ^~~~~~~~~~~~~
+Z:\vm\openSSD-fw-ori\openssd\src/debug.h:107:29: warning: statement with no effect [-Wunused-value]
+ #define STATIC_ASSERT(cond) ((int)(sizeof(struct { int : (-!(cond)); })))
+                             ^
+../src/nmc/nmc_mapping.c:78:5: note: in expansion of macro 'STATIC_ASSERT'
+     STATIC_ASSERT(sizeof(NMC_CH_MAPPING_TABLE) == BYTES_PER_SLICE);
+     ^~~~~~~~~~~~~
+Z:\vm\openSSD-fw-ori\openssd\src/debug.h:107:29: warning: statement with no effect [-Wunused-value]
+ #define STATIC_ASSERT(cond) ((int)(sizeof(struct { int : (-!(cond)); })))
+                             ^
+../src/nmc/nmc_mapping.c:80:5: note: in expansion of macro 'STATIC_ASSERT'
+     STATIC_ASSERT(NMC_DATA_BUFFER_END_ADDR < RESERVED1_END_ADDR);
+     ^~~~~~~~~~~~~
+Z:\vm\openSSD-fw-ori\openssd\src/debug.h:107:29: warning: statement with no effect [-Wunused-value]
+ #define STATIC_ASSERT(cond) ((int)(sizeof(struct { int : (-!(cond)); })))
+                             ^
+../src/nmc/nmc_mapping.c:81:5: note: in expansion of macro 'STATIC_ASSERT'
+     STATIC_ASSERT(RESERVED1_START_ADDR <= NMC_START_ADDR);
+     ^~~~~~~~~~~~~
+Z:\vm\openSSD-fw-ori\openssd\src/debug.h:107:29: warning: statement with no effect [-Wunused-value]
+ #define STATIC_ASSERT(cond) ((int)(sizeof(struct { int : (-!(cond)); })))
+                             ^
+../src/nmc/nmc_mapping.c:82:5: note: in expansion of macro 'STATIC_ASSERT'
+     STATIC_ASSERT(NMC_END_ADDR <= RESERVED1_END_ADDR);
+     ^~~~~~~~~~~~~
+'Finished building: ../src/nmc/nmc_mapping.c'
+' '
+'Building file: ../src/nmc/nmc_requests.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -DDEBUG -Wall -O0 -g3 -I"Z:\vm\openSSD-fw-ori\openssd\src" -I"Z:\vm\openSSD-fw-ori\openssd\src\nvme" -c -fmessage-length=0 -MT"src/nmc/nmc_requests.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../openssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nmc/nmc_requests.d" -MT"src/nmc/nmc_requests.o" -o "src/nmc/nmc_requests.o" "../src/nmc/nmc_requests.c"
+'Finished building: ../src/nmc/nmc_requests.c'
+' '
+'Building file: ../src/monitor/monitor.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -DDEBUG -Wall -O0 -g3 -I"Z:\vm\openSSD-fw-ori\openssd\src" -I"Z:\vm\openSSD-fw-ori\openssd\src\nvme" -c -fmessage-length=0 -MT"src/monitor/monitor.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../openssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/monitor/monitor.d" -MT"src/monitor/monitor.o" -o "src/monitor/monitor.o" "../src/monitor/monitor.c"
+In file included from ../src/monitor/monitor.c:1:
+../src/monitor/monitor.c: In function 'monitorInit':
+Z:\vm\openSSD-fw-ori\openssd\src/debug.h:107:29: warning: statement with no effect [-Wunused-value]
+ #define STATIC_ASSERT(cond) ((int)(sizeof(struct { int : (-!(cond)); })))
+                             ^
+../src/monitor/monitor.c:22:5: note: in expansion of macro 'STATIC_ASSERT'
+     STATIC_ASSERT(MONITOR_END_ADDR < COMPLETE_FLAG_TABLE_ADDR);
+     ^~~~~~~~~~~~~
+Z:\vm\openSSD-fw-ori\openssd\src/debug.h:107:29: warning: statement with no effect [-Wunused-value]
+ #define STATIC_ASSERT(cond) ((int)(sizeof(struct { int : (-!(cond)); })))
+                             ^
+../src/monitor/monitor.c:23:5: note: in expansion of macro 'STATIC_ASSERT'
+     STATIC_ASSERT(sizeof(MONITOR_SLICE_BUFFER) == BYTES_PER_SLICE);
+     ^~~~~~~~~~~~~
+Z:\vm\openSSD-fw-ori\openssd\src/debug.h:107:29: warning: statement with no effect [-Wunused-value]
+ #define STATIC_ASSERT(cond) ((int)(sizeof(struct { int : (-!(cond)); })))
+                             ^
+../src/monitor/monitor.c:24:5: note: in expansion of macro 'STATIC_ASSERT'
+     STATIC_ASSERT(sizeof(MONITOR_DATA_BUFFER) == (USER_DIES * BYTES_PER_SLICE));
+     ^~~~~~~~~~~~~
+'Finished building: ../src/monitor/monitor.c'
+' '
+'Building file: ../src/monitor/monitor_buffer.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -DDEBUG -Wall -O0 -g3 -I"Z:\vm\openSSD-fw-ori\openssd\src" -I"Z:\vm\openSSD-fw-ori\openssd\src\nvme" -c -fmessage-length=0 -MT"src/monitor/monitor_buffer.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../openssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/monitor/monitor_buffer.d" -MT"src/monitor/monitor_buffer.o" -o "src/monitor/monitor_buffer.o" "../src/monitor/monitor_buffer.c"
+'Finished building: ../src/monitor/monitor_buffer.c'
+' '
+'Building file: ../src/monitor/monitor_cmds.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -DDEBUG -Wall -O0 -g3 -I"Z:\vm\openSSD-fw-ori\openssd\src" -I"Z:\vm\openSSD-fw-ori\openssd\src\nvme" -c -fmessage-length=0 -MT"src/monitor/monitor_cmds.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../openssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/monitor/monitor_cmds.d" -MT"src/monitor/monitor_cmds.o" -o "src/monitor/monitor_cmds.o" "../src/monitor/monitor_cmds.c"
+'Finished building: ../src/monitor/monitor_cmds.c'
+' '
+'Building file: ../src/monitor/monitor_flash.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -DDEBUG -Wall -O0 -g3 -I"Z:\vm\openSSD-fw-ori\openssd\src" -I"Z:\vm\openSSD-fw-ori\openssd\src\nvme" -c -fmessage-length=0 -MT"src/monitor/monitor_flash.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../openssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/monitor/monitor_flash.d" -MT"src/monitor/monitor_flash.o" -o "src/monitor/monitor_flash.o" "../src/monitor/monitor_flash.c"
+'Finished building: ../src/monitor/monitor_flash.c'
+' '
+'Building file: ../src/monitor/monitor_map.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -DDEBUG -Wall -O0 -g3 -I"Z:\vm\openSSD-fw-ori\openssd\src" -I"Z:\vm\openSSD-fw-ori\openssd\src\nvme" -c -fmessage-length=0 -MT"src/monitor/monitor_map.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../openssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/monitor/monitor_map.d" -MT"src/monitor/monitor_map.o" -o "src/monitor/monitor_map.o" "../src/monitor/monitor_map.c"
+'Finished building: ../src/monitor/monitor_map.c'
+' '
+'Building file: ../src/address_translation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -DDEBUG -Wall -O0 -g3 -I"Z:\vm\openSSD-fw-ori\openssd\src" -I"Z:\vm\openSSD-fw-ori\openssd\src\nvme" -c -fmessage-length=0 -MT"src/address_translation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../openssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/address_translation.d" -MT"src/address_translation.o" -o "src/address_translation.o" "../src/address_translation.c"
+'Finished building: ../src/address_translation.c'
+' '
+'Building file: ../src/data_buffer.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -DDEBUG -Wall -O0 -g3 -I"Z:\vm\openSSD-fw-ori\openssd\src" -I"Z:\vm\openSSD-fw-ori\openssd\src\nvme" -c -fmessage-length=0 -MT"src/data_buffer.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../openssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/data_buffer.d" -MT"src/data_buffer.o" -o "src/data_buffer.o" "../src/data_buffer.c"
+'Finished building: ../src/data_buffer.c'
+' '
+'Building file: ../src/ftl_config.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -DDEBUG -Wall -O0 -g3 -I"Z:\vm\openSSD-fw-ori\openssd\src" -I"Z:\vm\openSSD-fw-ori\openssd\src\nvme" -c -fmessage-length=0 -MT"src/ftl_config.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../openssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ftl_config.d" -MT"src/ftl_config.o" -o "src/ftl_config.o" "../src/ftl_config.c"
+../src/ftl_config.c: In function 'InitNandArray':
+../src/ftl_config.c:224:40: warning: passing argument 3 of 'V2FReadIdSync' from incompatible pointer type [-Wincompatible-pointer-types]
+         V2FReadIdSync(&chCtlReg[i], 0, idData);
+                                        ^~~~~~
+In file included from ../src/ftl_config.h:50,
+                 from ../src/data_buffer.h:50,
+                 from ../src/memory_map.h:50,
+                 from ../src/ftl_config.c:52:
+../src/nsc_driver.h:450:59: note: expected 'unsigned int *' but argument is of type 'unsigned char *'
+ void V2FReadIdSync(T4REGS *t4regs, int way, unsigned int *statusReport);
+                                             ~~~~~~~~~~~~~~^~~~~~~~~~~~
+'Finished building: ../src/ftl_config.c'
+' '
+'Building file: ../src/garbage_collection.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -DDEBUG -Wall -O0 -g3 -I"Z:\vm\openSSD-fw-ori\openssd\src" -I"Z:\vm\openSSD-fw-ori\openssd\src\nvme" -c -fmessage-length=0 -MT"src/garbage_collection.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../openssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/garbage_collection.d" -MT"src/garbage_collection.o" -o "src/garbage_collection.o" "../src/garbage_collection.c"
+'Finished building: ../src/garbage_collection.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -DDEBUG -Wall -O0 -g3 -I"Z:\vm\openSSD-fw-ori\openssd\src" -I"Z:\vm\openSSD-fw-ori\openssd\src\nvme" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../openssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/request_allocation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -DDEBUG -Wall -O0 -g3 -I"Z:\vm\openSSD-fw-ori\openssd\src" -I"Z:\vm\openSSD-fw-ori\openssd\src\nvme" -c -fmessage-length=0 -MT"src/request_allocation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../openssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/request_allocation.d" -MT"src/request_allocation.o" -o "src/request_allocation.o" "../src/request_allocation.c"
+'Finished building: ../src/request_allocation.c'
+' '
+'Building file: ../src/request_schedule.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -DDEBUG -Wall -O0 -g3 -I"Z:\vm\openSSD-fw-ori\openssd\src" -I"Z:\vm\openSSD-fw-ori\openssd\src\nvme" -c -fmessage-length=0 -MT"src/request_schedule.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../openssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/request_schedule.d" -MT"src/request_schedule.o" -o "src/request_schedule.o" "../src/request_schedule.c"
+../src/request_schedule.c: In function 'CheckEccErrorInfo':
+../src/request_schedule.c:1322:30: warning: variable 'errorInfo1' set but not used [-Wunused-but-set-variable]
+     unsigned int errorInfo0, errorInfo1, reqSlotTag;
+                              ^~~~~~~~~~
+'Finished building: ../src/request_schedule.c'
+' '
+'Building file: ../src/request_transform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -DDEBUG -Wall -O0 -g3 -I"Z:\vm\openSSD-fw-ori\openssd\src" -I"Z:\vm\openSSD-fw-ori\openssd\src\nvme" -c -fmessage-length=0 -MT"src/request_transform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../openssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/request_transform.d" -MT"src/request_transform.o" -o "src/request_transform.o" "../src/request_transform.c"
+'Finished building: ../src/request_transform.c'
+' '
+'Building target: openssd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../openssd_bsp/ps7_cortexa9_0/lib -o "openssd.elf"  ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/nmc/address_translation_nmc.o ./src/nmc/nmc_file_table.o ./src/nmc/nmc_mapping.o ./src/nmc/nmc_requests.o  ./src/monitor/monitor.o ./src/monitor/monitor_buffer.o ./src/monitor/monitor_cmds.o ./src/monitor/monitor_flash.o ./src/monitor/monitor_map.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/garbage_collection.o ./src/main.o ./src/nsc_driver.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: openssd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size openssd.elf  |tee "openssd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 187460	   7200	  25296	 219956	  35b34	openssd.elf
+'Finished building: openssd.elf.size'
+' '
+15:26:49 **** Auto Build of configuration Debug for project openssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/monitor/monitor_cmds.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -DDEBUG -Wall -O0 -g3 -I"Z:\vm\openSSD-fw-ori\openssd\src" -I"Z:\vm\openSSD-fw-ori\openssd\src\nvme" -c -fmessage-length=0 -MT"src/monitor/monitor_cmds.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../openssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/monitor/monitor_cmds.d" -MT"src/monitor/monitor_cmds.o" -o "src/monitor/monitor_cmds.o" "../src/monitor/monitor_cmds.c"
+'Finished building: ../src/monitor/monitor_cmds.c'
+' '
+'Building target: openssd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../openssd_bsp/ps7_cortexa9_0/lib -o "openssd.elf"  ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/nmc/address_translation_nmc.o ./src/nmc/nmc_file_table.o ./src/nmc/nmc_mapping.o ./src/nmc/nmc_requests.o  ./src/monitor/monitor.o ./src/monitor/monitor_buffer.o ./src/monitor/monitor_cmds.o ./src/monitor/monitor_flash.o ./src/monitor/monitor_map.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/garbage_collection.o ./src/main.o ./src/nsc_driver.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: openssd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size openssd.elf  |tee "openssd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 187460	   7200	  25296	 219956	  35b34	openssd.elf
+'Finished building: openssd.elf.size'
+' '
+15:27:10 **** Auto Build of configuration Debug for project openssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/monitor/monitor_cmds.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -DDEBUG -Wall -O0 -g3 -I"Z:\vm\openSSD-fw-ori\openssd\src" -I"Z:\vm\openSSD-fw-ori\openssd\src\nvme" -c -fmessage-length=0 -MT"src/monitor/monitor_cmds.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../openssd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/monitor/monitor_cmds.d" -MT"src/monitor/monitor_cmds.o" -o "src/monitor/monitor_cmds.o" "../src/monitor/monitor_cmds.c"
+'Finished building: ../src/monitor/monitor_cmds.c'
+' '
+'Building target: openssd.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../openssd_bsp/ps7_cortexa9_0/lib -o "openssd.elf"  ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/nmc/address_translation_nmc.o ./src/nmc/nmc_file_table.o ./src/nmc/nmc_mapping.o ./src/nmc/nmc_requests.o  ./src/monitor/monitor.o ./src/monitor/monitor_buffer.o ./src/monitor/monitor_cmds.o ./src/monitor/monitor_flash.o ./src/monitor/monitor_map.o  ./src/address_translation.o ./src/data_buffer.o ./src/ftl_config.o ./src/garbage_collection.o ./src/main.o ./src/nsc_driver.o ./src/request_allocation.o ./src/request_schedule.o ./src/request_transform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: openssd.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size openssd.elf  |tee "openssd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 187460	   7200	  25296	 219956	  35b34	openssd.elf
+'Finished building: openssd.elf.size'
+' '
+15:27:15 **** Incremental Build of configuration Debug for project openssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:35:54 **** Incremental Build of configuration Debug for project openssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:36:26 **** Incremental Build of configuration Debug for project openssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:42:36 **** Incremental Build of configuration Debug for project openssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:44:47 **** Incremental Build of configuration Debug for project openssd ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.

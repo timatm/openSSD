@@ -1,0 +1,5 @@
+{
+    "files.associations": {
+        "xil_sleeptimer.h": "c"
+    }
+}
